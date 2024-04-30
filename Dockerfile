@@ -11,3 +11,5 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 COPY --from=build /app ./
 ENTRYPOINT ["dotnet", "webapp.dll"]
+
+EXPOSE 80
